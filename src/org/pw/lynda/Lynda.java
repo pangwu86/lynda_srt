@@ -13,6 +13,14 @@ import org.nutz.log.Logs;
 
 public class Lynda {
 
+    public static void main(String[] args) {
+        if (args.length == 2) {
+            integrateVideoAndSrt(args[0], args[1]);
+        } else {
+            log.error("args length is not 2, please check and run again");
+        }
+    }
+
     private static Log log = Logs.get();
 
     /**
